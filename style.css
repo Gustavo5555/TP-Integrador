@@ -1,0 +1,388 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;500&family=Poppins:wght@300;400;600;700&family=Work+Sans:ital@0;1&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: 'Oswald';
+}
+
+.contenedor-header {
+    background: #353a40;
+    position: fixed;
+    width: 100%; 
+    top: 0;
+    left: 0;
+    z-index: 99;
+}
+
+.contenedor-header header{
+    max-width: 1500px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+}
+
+.contenedor-header .logo{
+    display: flex;
+}
+
+.contenedor-header .imgcac img{
+    width: 100px;
+    height: 70px;
+ 
+    align-items: center;
+}
+
+.contenedor-header .logo a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 30px;
+    padding: 15px 20px;
+}
+
+
+.contenedor-header nav ul{
+    display: flex;
+    list-style: none;
+}
+
+.contenedor-header nav ul li a{
+    font-size: 18px;
+    text-decoration: none;
+    color: #9b9ca0;
+    padding: 20px;
+    transition: .3s;
+}
+
+.contenedor-header nav ul li a:hover{
+    color: #fff;
+}
+
+#verde{
+    color: #29a744;
+}
+
+/*------------------------------------------*/
+.conferencia{
+    background: url(img/ba1.jpg);
+    background-size: cover;
+    
+    height: 100vh;
+    color: #fff;
+    display: flex;
+    align-items: center;  
+    justify-content: right;
+    position: relative;
+}
+
+.conferencia::before{
+    position: absolute;
+    content: '';
+    background-color: black;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: .5;
+}
+
+.conferencia .contenido-seccion h2{
+    font-size: 50px;
+}
+
+.conferencia .contenido-seccion{
+    position: relative;
+    width: 600px;
+    height: 100px;
+    padding-right: 200px;
+    text-align: right;
+    font-size: 23px;
+}
+
+.conferencia .contenido-seccion .botones{
+    display: inline-flex;
+    justify-content: space-between;
+    width: 420px;
+    padding-top: 20px;
+}
+
+.conferencia .contenido-seccion .botones a{
+    display: flex;
+    height: 50px;
+    width: 200px; 
+    color: #fff;
+    text-decoration: none;
+    padding: 20 px;
+    border: 1px solid white;
+    border-radius: 8px;
+    justify-content: center;
+    align-items: center;
+    transition: .3s;
+}
+
+.conferencia .contenido-seccion .botones a:hover{
+    background-color: #29a744;
+}
+
+#verde-fondo{
+    background-color: #29a744;
+}
+
+/* ----------------------------------------------------------- */
+
+.oradores .titulo{
+    justify-content: center;
+    text-align: center;
+}
+
+.oradores .contenido-seccion .contenido-box img{
+    height: 360px;
+    width: 340px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.oradores .contenido-seccion {
+    display: flex;
+    width: 1100px;
+    margin: auto;
+    justify-content: space-between;
+    
+}
+
+.oradores .contenido-seccion .contenido-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 1px solid #dfdfdf;
+    border-radius: 8px;
+    width: 340px;
+}
+
+.oradores .contenido-seccion .contenido-box .skills{
+    display: inline-flex;
+    width: 150px;
+    padding: 20px 10px 0px 16px;
+}
+
+.oradores .contenido-seccion .contenido-box .skills .javascript{
+    background-color: #fec107;
+    border-radius: 5px;
+    height: 25px;
+    width: 70px;
+    text-align: center;
+}
+
+.oradores .contenido-seccion .contenido-box .skills .react{
+    color: #fff;
+    background-color: #17a2b9;
+    border-radius: 5px;
+    height: 25px;
+    width: 42px;
+    text-align: center;
+    margin-left: 10px;
+    
+}
+
+.oradores .contenido-seccion .contenido-box .skills .negocios{
+    color: #fff;
+    background-color: #6c757c;
+    border-radius: 5px;
+    height: 25px;
+    width: 60px;
+    text-align: center;
+}
+
+.oradores .contenido-seccion .contenido-box .skills .startups{
+    color: #fff;
+    background-color: #dc3546;
+    border-radius: 5px;
+    height: 25px;
+    width: 60px;
+    text-align: center;
+    margin-left: 10px;
+}
+
+
+.oradores .contenido-seccion .contenido-box .info{
+    padding: 0px 16px 16px 16px;
+}
+
+.oradores .contenido-seccion .contenido-box .info h5{
+    padding-bottom: 10px;
+    font-size: 25px;
+}
+
+.oradores .contenido-seccion .contenido-box .info p{
+    font-size: 16px;
+}
+
+
+/* ----------------------------------------------------------- */
+
+
+.lugar-fecha .contenido-seccion{
+    display: flex;  
+    padding-top: 50px; 
+    max-width: 100%;
+    justify-content: space-between;
+}
+
+.lugar-fecha .contenido-seccion img{
+    width: 49.9%;
+    
+    
+}
+
+.lugar-fecha .contenido-seccion .info{
+    background-color: #353a40;
+    color: #fff;
+    width: 50%;
+    
+}
+
+.lugar-fecha .contenido-seccion .info h3{
+    font-size: 40px;
+    padding: 20px 30px;
+}
+
+.lugar-fecha .contenido-seccion .info p{
+    
+    font-size: 20px;
+    padding: 0px 20px 0px 30px;
+}
+
+.lugar-fecha .contenido-seccion .info .boton{
+    width: 420px;
+    padding-top: 20px;
+    padding-left: 30px;
+}
+
+.lugar-fecha .contenido-seccion .info .boton a{
+    font-size: 20px;
+    display: flex;
+    height: 45px;
+    width: 110px; 
+    color: #fff;
+    text-decoration: none;
+    padding: 20 px;
+    border: 1px solid white;
+    border-radius: 8px;
+    justify-content: center;
+    align-items: center;
+    transition: .3s;
+    
+}
+
+.lugar-fecha .contenido-seccion .info .boton a:hover{
+    background-color: #29a744;
+}
+
+
+/* -------------------------------------------------------------------*/
+
+.convertite .titulo{
+    padding-top: 30px;
+    justify-content: center;
+    text-align: center;
+}
+
+.convertite .titulo h3{
+    font-size: 28px;
+}
+
+.convertite .contenido-seccion .form{
+    text-align: center;
+    max-width: 1100px;
+    margin: auto;
+    flex-direction: column;
+    padding: 20px;
+    justify-content: space-between;
+}
+
+.convertite .contenido-seccion .form input{
+    width: 350px;
+    height: 30px;
+    margin: 10px;
+    border: 1px solid gainsboro;
+    border-radius: 5px;
+    padding-left: 10px;
+    font-size: 17px
+    
+}
+
+.convertite .contenido-seccion .form .opinion textarea{    
+    font-size: 20px;
+    width: 722px;
+    height: 120px;
+    border: 1px solid gainsboro;
+    border-radius: 5px;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.convertite .contenido-seccion .form p{
+    text-align: left;
+    color: #6d767b;
+    padding-top: 4px;
+    padding-left: 180px;
+}
+
+.convertite .contenido-seccion .boton{
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.convertite .contenido-seccion .boton button{
+    width: 744px;
+    height: 40px;
+    border: transparent;
+    border-radius: 5px;
+    background-color: #96c93e;
+    color: #fff;
+}
+
+/* -------------------------------------------------------- */
+footer{
+    padding-top: 30px;
+    
+}
+
+footer .contenido-footer{
+    width: 100%;
+    height: 90px;
+    background-color: #1d3c4e;
+}
+
+footer ul{
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+}
+footer ul li{
+    list-style: none;
+    padding:0 50px 0 50px ;
+}
+
+footer ul li a{
+    font-size: 18px;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+}
+
+
+@media (max-width:600px){
+    body{
+        background-color: black;
+    }
+}
