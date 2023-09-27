@@ -72,7 +72,7 @@ body{
 .conferencia{
     background: url(img/ba1.jpg);
     background-size: cover;
-    
+    background-image: none;
     height: 100vh;
     color: #fff;
     display: flex;
