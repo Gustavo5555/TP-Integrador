@@ -69,17 +69,28 @@ body{
 }
 
 /*------------------------------------------*/
+
+
 .conferencia{
-    background: url(img/ba1.jpg);
+    /*background: url(img/ba1.jpg);
     background-size: cover;
-    background-image: none;
     height: 100vh;
+    */
+    width: 100%;
+    background-size: cover;
+    height: 100vh;
+    animation: slide 15s infinite;
+    
+    
     color: #fff;
     display: flex;
     align-items: center;  
     justify-content: right;
     position: relative;
 }
+
+
+
 
 .conferencia::before{
     position: absolute;
@@ -92,18 +103,48 @@ body{
     opacity: .5;
 }
 
-.conferencia .contenido-seccion h2{
-    font-size: 50px;
-}
-
 .conferencia .contenido-seccion{
-    position: relative;
+    position: absolute;
     width: 600px;
     height: 100px;
     padding-right: 200px;
     text-align: right;
     font-size: 23px;
+
 }
+
+@keyframes slide {
+    0%{
+        background-image: url(img/ba1.jpg);
+        background-size: cover;
+
+    }
+
+    33%{
+        background-image: url(img/ba2.jpg);
+        background-size: cover;
+    }
+
+    66%{
+        background-image: url(img/ba3.jpg);
+        background-size: cover;
+    }
+
+    100%{
+        background-image: url(img/ba1.jpg);
+        background-size: cover;
+
+    }
+}
+
+
+.conferencia .contenido-seccion h2{
+    font-size: 50px;
+}
+
+
+
+
 
 .conferencia .contenido-seccion .botones{
     display: inline-flex;
@@ -382,7 +423,5 @@ footer ul li a{
 
 
 @media (max-width:600px){
-    body{
-        background-color: black;
-    }
+   
 }
