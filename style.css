@@ -8,6 +8,7 @@
 
 body{
     font-family: 'Oswald';
+    width: 100%;
 }
 
 .contenedor-header {
@@ -20,7 +21,7 @@ body{
 }
 
 .contenedor-header header{
-    max-width: 1500px;
+    max-width: 100%;
     margin: auto;
     display: flex;
     justify-content: space-between;
@@ -85,7 +86,7 @@ body{
     color: #fff;
     display: flex;
     align-items: center;  
-    justify-content: right;
+    justify-content: flex-end;
     position: relative;
 }
 
@@ -106,8 +107,7 @@ body{
 .conferencia .contenido-seccion{
     position: absolute;
     width: 600px;
-    height: 100px;
-    padding-right: 200px;
+    margin-right: 180px;
     text-align: right;
     font-size: 23px;
 
@@ -396,6 +396,7 @@ body{
 footer{
     padding-top: 30px;
     
+    
 }
 
 footer .contenido-footer{
@@ -422,6 +423,10 @@ footer ul li a{
 }
 
 
-@media (max-width:600px){
-   
+@media (max-width:1200px){
+    .oradores .contenido-seccion {
+        
+        display: flex;
+        flex-direction: row;
+    }
 }
