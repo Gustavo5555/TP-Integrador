@@ -26,7 +26,7 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px 20px;
+    padding: 15px 60px;
 }
 
 .contenedor-header .logo{
@@ -54,7 +54,7 @@ body{
 }
 
 .contenedor-header nav ul li a{
-    font-size: 18px;
+    font-size: 23px;
     text-decoration: none;
     color: #9b9ca0;
     padding: 20px;
@@ -78,8 +78,11 @@ body{
     height: 100vh;
     */
     width: 100%;
+    
     background-size: cover;
-    height: 100vh;
+    background-position: center;
+    background-attachment: fixed;
+    height: 90vh;
     animation: slide 15s infinite;
     
     
@@ -342,7 +345,6 @@ body{
     text-align: center;
     max-width: 1100px;
     margin: auto;
-    flex-direction: column;
     padding: 20px;
     justify-content: space-between;
 }
@@ -393,6 +395,125 @@ body{
 }
 
 /* -------------------------------------------------------- */
+
+.tickets{
+    padding-top: 30px;
+}
+
+.tickets .contenido-seccion{
+    display: flex;
+    width: 765px;
+    margin: auto;
+    justify-content: space-between;
+}
+
+
+.tickets .contenido-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    border: 1px solid blue;
+    width: 250px;
+    height: 200px;
+}
+
+.tickets .contenido-box p{
+    font-size: 20px;
+    padding: 5px;
+}
+/* -------------------------------------------------------- */
+
+.comprar .titulo{
+    text-align: center;
+    margin-top: 20px;
+   
+}
+.comprar .titulo h1{
+    font-size: 50px;
+}
+
+.comprar .formulario{
+    display: flex;
+    flex-wrap:wrap ;
+    margin: auto;
+    justify-content: center;
+    width: 800px;
+    
+}
+
+.comprar .formulario input{
+    width: 300px;
+    height: 40px;
+    padding-left: 15px;
+    margin: 10px;
+    border-radius: 5px;
+    border: 1px solid rgb(168, 164, 164);
+    font-size: 16px;
+    flex-grow: 1; 
+}
+
+
+.comprar .seleccion{
+    display: flex;
+    flex-wrap:wrap;
+    margin: auto;
+    justify-content: space-between;
+    width: 800px;
+
+    
+}
+
+
+
+.comprar .seleccion p{
+    width: 300px;
+    margin: 10px 10px 10px 10px;
+    padding-left: 11px;
+    font-size: 18px;
+    flex-grow: 1;
+   
+}
+
+.comprar .seleccion input{
+    width: 300px;
+    height: 40px;
+    margin: 0px 10px 10px 10px ;
+    padding-left: 15px;
+    border-radius: 5px;
+    border: 1px solid rgb(168, 164, 164);
+    font-size: 16px;
+    flex-grow: 1;
+    
+}
+
+.comprar .seleccion select{
+    width: 317px;
+    height: 42px;
+    margin: 0px 10px 10px 10px ;
+    padding-left: 15px;
+    border-radius: 5px;
+    border: 1px solid rgb(168, 164, 164);
+    font-size: 16px;
+    flex-grow: 1;
+}
+
+.comprar .seleccion button{
+    width: 300px;
+    height: 40px;
+    margin: 20px 10px 10px 10px ;
+    padding-left: 15px;
+    border-radius: 5px;
+    border: 1px solid rgb(168, 164, 164);
+    font-size: 16px;
+    background-color: lightblue;
+    text-align: start;
+    flex-grow: 1;
+}
+
+
+
+/* -------------------------------------------------------- */
 footer{
     padding-top: 30px;
     
@@ -406,13 +527,22 @@ footer .contenido-footer{
 }
 
 footer ul{
-    display: flex;
+    /* display: flex;
     justify-content: center;
-    padding-top: 20px;
+    padding-top: 20px; */
+    display: flex;
+    list-style-type: none;
+    justify-content: space-around;
+    padding: 10px;
+    align-items: center;
+    margin-bottom: 0;
 }
 footer ul li{
-    list-style: none;
-    padding:0 50px 0 50px ;
+    /* list-style: none;
+    padding:0 50px 0 50px ; */
+    width: 10%;
+    text-align: center;
+
 }
 
 footer ul li a{
@@ -423,10 +553,25 @@ footer ul li a{
 }
 
 
-@media (max-width:1200px){
-    .oradores .contenido-seccion {
-        
-        display: flex;
-        flex-direction: row;
+@media (max-width:480px){
+
+    .conferencia{
+        padding: 0;
+        text-align: center;
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+    }
+
+    footer ul{
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 100vw;
+    }
+
+    footer ul li{
+        padding: 10px 0px;
+        width: auto;
     }
 }
